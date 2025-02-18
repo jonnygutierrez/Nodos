@@ -54,8 +54,6 @@
     font-weight: 700;
 }
 
-
-
 @media (min-width: 768px) {
     
     .sub-title1 {
@@ -74,3 +72,43 @@
         font-size: 72px; 
     }
 }
+
+
+
+/* Estilo del contenedor principal */
+.swiper-container {
+    width: 100%;
+    // background-color: red;
+  }
+  
+  /* Estilo de cada slide */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Color de fondo de cada slide */
+    border: 1px solid #ccc; /* Borde de cada slide */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Estilo del contenido dentro de cada slide */
+  .slide-content {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+//   /* Personalización de los botones de navegación */
+//   .swiper-button-next,
+//   .swiper-button-prev {
+//     color: #000; /* Color de las flechas */
+//   }
+  
+//   /* Personalización de la paginación */
+//   .swiper-pagination-bullet {
+//     background-color: #ccc; /* Color de los puntos inactivos */
+//   }
+  
+//   .swiper-pagination-bullet-active {
+//     background-color: #ff0000; /* Color del punto activo */
+//   }
