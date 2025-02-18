@@ -5,7 +5,7 @@
 }
 
 #navBar {
-  border-bottom: 1px solid var(--midnightBlue);
+  border-bottom: 1px solid rgba(var(--midnightBlue),1);
   width: 100%;
   height: 145px;
   display: flex;
@@ -100,7 +100,7 @@
           font-size: clamp(12px, 18px, 18px);
           font-weight: 500;
           &:first-child {
-            background-color: var(--midnightBlue);
+            background-color:rgba(var(--midnightBlue),1);
             color: white;
             max-width: 203px;
             width: 100%;
@@ -110,7 +110,7 @@
             width: 100%;
             font-weight: 600;
             background-color: var(--chartreuse);
-            color: var(--midnightBlue);
+            color: rgba(var(--midnightBlue),1);
           }
         }
       }
