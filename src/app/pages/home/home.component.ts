@@ -4,6 +4,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { UsServicesComponent } from './us-services/us-services.component';
 import { BriefcaseComponent } from './briefcase/briefcase.component';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,8 @@ import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
     SkillsComponent,
     UsServicesComponent,
     BriefcaseComponent,
-    NavBarComponent, NavBarComponent
+    NavBarComponent, NavBarComponent,
+    FooterComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
