@@ -1,1 +1,102 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+
+:root {
+  --midnightBlue: rgba(0, 20, 35, 1);
+  --chartreuse: rgba(149, 242, 17, 1);
+  --deepSkyBlue: rgba(0, 196, 255, 1);
+  --violet: rgba(199, 125, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: poppins;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// .w100 {
+//   width: 100%;
+// }
+// .w90 {
+//   width: 90%;
+// }
+// .w80 {
+//   width: 80%;
+// }
+// .w70 {
+//   width: 70%;
+// }
+// .w60 {
+//   width: 60%;
+// }
+// .w50 {
+//   width: 50%;
+// }
+// .w40 {
+//   width: 40%;
+// }
+// .w30 {
+//   width: 30%;
+// }
+// .w20 {
+//   width: 20%;
+// }
+// .w10 {
+//   width: 10%;
+// }
+
+@for $i from 1 through 10 {
+  $width: $i * 10%;
+  .w#{$i * 10} {
+    width: #{$width};
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

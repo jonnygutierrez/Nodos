@@ -1,0 +1,87 @@
+#briefcase-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: 
+    linear-gradient(to bottom, rgb(245, 255, 244) 0%, rgba(255, 255, 255, 0) 100%), 
+    linear-gradient(90deg, rgba(0, 195, 255, 0.219)  0%, rgba(0, 195, 255, 0.219)  100%); 
+    background-size: cover;
+    padding-bottom: 10vh;
+    .btn-services{
+        font-weight: 600;
+        background-color: #00C4FF;
+        border-radius: 100px;
+        height: 40px;
+        width: 160px;
+        margin-top:70px ;
+    }
+    .solution-span{
+        font-weight: 600;
+        font-size: 36px; 
+    } 
+    .cont-txt{
+        p{
+            text-align: center;
+            margin-top: 22px;
+            font-size: 18px;
+        }        
+    }
+    .bld{ font-weight: 600;}
+    
+    .content-cards{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5vh;
+        .card{
+            width:  57vh;
+            height: 57vh;           
+            border-radius: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .circle-content{
+                width:  14.5vh;
+                height: 14.5vh;
+                border-radius: 50%;
+                background-color: black;
+                position: relative;
+                top: 38%;
+                left: 38%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .bck-4ff{
+            background-image: url('../../../../assets/img/cards/firstCard.svg');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;  
+        }
+        .bck-4ff-deg{
+            background-image: url('../../../../assets/img/cards/second_card.svg');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;
+        }
+    }
+    .content-btncrd{
+        margin-top: 5vh;
+        display: flex;
+        justify-content: space-between;
+        .content-btn-card{
+            width:  57vh;
+            padding-left: 0.5vh;
+            button{
+               width: 40%;
+               padding: 5px; 
+               background-color: white;
+               border-radius: 24px;
+               height: 55px;
+               display: flex;
+               align-items: center;
+               justify-content: center;      
+            }
+        }
+    } 
+}

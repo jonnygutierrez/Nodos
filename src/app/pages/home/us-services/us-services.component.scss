@@ -1,0 +1,45 @@
+#section-service{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    align-items: center;
+    background: 
+    linear-gradient(to bottom, rgb(245, 255, 244) 0%, rgba(255, 255, 255, 0) 100%), 
+    linear-gradient(90deg, rgba(148, 242, 17, 0.295) 0%, rgba(148, 242, 17, 0.295) 100%); 
+    background-size: cover;
+    .btn-services{
+        font-weight: 600;
+        background-color: #95F211;
+        border-radius: 100px;
+        height: 40px;
+        width: 160px;
+        margin-top:70px ;
+    }
+    .solution-span{
+        font-weight: 600;
+        font-size: 36px; 
+    }
+    .cont-txt{
+        p{
+            text-align: center;
+            margin-top: 22px;
+            font-size: 18px;
+        }        
+    }
+    .content-cards{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8vh;
+        .card{
+            width:  45vh;
+            height: 45vh;
+            border-radius: 15px;
+        }
+        .card-midnight{
+            background-color: #001423;
+        }
+        .card-middle{
+            background: linear-gradient(180deg, #95F211 0%, #568C0A 100%);
+        }
+    }
+}

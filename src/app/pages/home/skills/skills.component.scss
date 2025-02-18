@@ -1,0 +1,37 @@
+#skills-section {
+    height: 18vh;
+  
+    .content-skills {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+  
+      .contnen-card {
+        border: 1px solid #00142380;
+        width: 180px;
+        height: 75px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: ease all 0.25s;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(20px); 
+      }
+  
+      .contnen-card.active {
+        opacity: 1; 
+        transform: translateY(0); 
+        transition: opacity 0.25s ease, transform 0.45s ease;
+      }
+  
+      .contnen-card:hover {
+        background-color: #00142380;
+        color: white;
+        border: none;
+      }
+    }
+  }
+  

@@ -1,0 +1,10 @@
+<section id="skills-section" class="w100">
+  <div class="content-skills">
+    <img src="" alt="">
+    <div
+      *ngFor="let item of skills; let i = index"class="contnen-card" [class.active]="isActive(i)" >
+      <!-- {{ item.name }} -->
+      <img [src]="item.src" alt="">
+    </div>
+  </div>
+</section>
