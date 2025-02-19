@@ -76,19 +76,17 @@
 
 
 /* Estilo del contenedor principal */
-.swiper-container {
-    width: 100%;
+.swiper-wrapper {
+    background-color: red;
     // background-color: red;
   }
   
   /* Estilo de cada slide */
   .swiper-slide {
+    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0; /* Color de fondo de cada slide */
-    border: 1px solid #ccc; /* Borde de cada slide */
-    border-radius: 8px; /* Bordes redondeados */
   }
   
   /* Estilo del contenido dentro de cada slide */

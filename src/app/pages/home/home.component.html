@@ -21,10 +21,12 @@
 
 <div class="swiper">
     <div class="swiper-wrapper">
+        @for (item of items; track $index) {
+            <div class="swiper-slide">
 
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+                <app-card-info></app-card-info>
+            </div>
+        }
     </div>
   </div>
 

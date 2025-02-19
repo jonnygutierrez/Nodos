@@ -20,15 +20,26 @@ import { CardInfoComponent } from './components/card-info/card-info.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  items: string[] = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4']; // Datos de ejemplo
+  items: string[] = ['Slide 1', 'Slide 2', 'Slide 3', 'Slide 4','','','','']; // Datos de ejemplo
 
   ngAfterViewInit(): void {
     // Inicializa Swiper después de que la vista se haya cargado
     new (window as any).Swiper('.swiper', {
- 
+      slidesPerView: 3,
+      spaceBetween: 0,
+      loop:true,
       autoplay:{
         delay:5000
-      }
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 3.5,
+          spaceBetween: 30,
+        },
+      },
+
+      
     });
   }
 }
