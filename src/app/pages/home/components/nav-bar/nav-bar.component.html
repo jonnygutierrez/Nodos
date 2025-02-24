@@ -1,4 +1,56 @@
 <div class="color-line"></div>
+<nav>
+  <div class="navLogo">
+    <a href="#">
+      <img
+        src="../../../../../assets/img/header/id_visual.png"
+        alt="LogoNodo"
+      />
+    </a>
+  </div>
+
+  <div class="navMenu" #menu>
+    <i class="material-icons" (click)="toggleMenu()">lunch_dining</i>
+  </div>
+
+  <div class="navOptions">
+    <a href="#">Nosotros</a>
+    <a href="#">Servicios</a>
+    <a href="#">Portafolio</a>
+    <a href="#">Contáctanos</a>
+  </div>
+
+  <div class="navContact">
+    <button>
+      <span> ¡Cotiza Ahora! </span>
+      <img src="../../../../../assets/img/header/w-icons.svg" />
+    </button>
+    <button>ES</button>
+  </div>
+
+  <div class="navMenuList" [ngClass]="{ show: isMenuOpen }" #lists>
+    <div style="width: 100%; height: 40px"></div>
+    <div
+      style="
+        height: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      "
+    >
+      <i class="material-icons" (click)="toggleMenu()"> close </i>
+    </div>
+
+    <div class="menuActions">
+      <a href="#">Nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Portafolio</a>
+      <a href="#">Contáctanos</a>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="color-line"></div>
 
 <div id="navBar">
   <div>
@@ -20,5 +72,5 @@
     <button>¡Cotiza Ahora!</button>
     <button>ES</button>
   </div>
-  <!--  -->
-</div>
+
+</div> -->
