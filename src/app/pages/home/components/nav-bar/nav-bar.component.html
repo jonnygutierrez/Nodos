@@ -10,7 +10,13 @@
   </div>
 
   <div class="navMenu" #menu>
-    <i class="material-icons" (click)="toggleMenu()">lunch_dining</i>
+    <i
+      class="material-icons"
+      (click)="toggleMenu()"
+      [ngClass]="{ 'rotate-icon': isMenuOpen }"
+    >
+      {{ isMenuOpen ? "clear_all" : "lunch_dining" }}
+    </i>
   </div>
 
   <div class="navOptions">
