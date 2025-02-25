@@ -17,8 +17,18 @@ export class NavBarComponent implements AfterViewInit {
   ngAfterViewInit(): void {}
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      this.listm?.nativeElement.classList.add('closing');
+
+      setTimeout(() => {
+        this.isMenuOpen = false;
+        this.listm?.nativeElement.classList.remove('closing');
+      }, 500);
+    } else {
+      this.isMenuOpen = true;
+    }
   }
+
   selectIdiom(): void {
     if (this.idiom === 'ES') {
       this.idiom = 'EN';
