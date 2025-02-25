@@ -1,13 +1,14 @@
-#cardd{
-    border: 1px solid rgba(var(--midnightBlue),0.5);
-    width: 170px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100px;
-    transition: 0.3s ease all;
-    &:hover{
-        border: 1px solid var(--chartreuse);
-    }
+#cardd {
+  border: 1px solid rgba(var(--midnightBlue), 0.5);
+  width: 170px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+}
+
+#cardd:hover {
+  border: 1px solid var(--chartreuse);
 }

@@ -6,6 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+
+
+
 }
 
 .copy{
@@ -17,7 +21,11 @@
     color: #001423;
     height: 20%;
 }
+
+
 .content-terms{
+    width: 600px;
+  
     display: flex;
     justify-content: space-between;
 }
@@ -27,13 +35,14 @@
     justify-content: center;
     align-items: center;
     height: 60%;
+    background: red;
+    width: 600px
 }
-.content-terms{
-    height: 20%;
-    display: flex;
-    align-items: center;
-}
+
+
 .content-social-network{
     display: flex;
     justify-content: space-between;
+    background-color: green;
+    width: 35%;
 }

@@ -1,39 +1,51 @@
-<div id="container">
+<div id="container" #con>
     <!-- NAVBAR -->
     <app-nav-bar></app-nav-bar>
     <div class="b-container">
-
-        <div class="sub-title1">
-            <span class="txt-b line-1">Creamos <span class="gradient-text">páginas web</span>,</span>
-            <span class="txt-b line-1">transformamos tu marca</span>
-        </div>
-
-
-        <div class="sub-title2">
-            <span class="line-1">En <span class="txt-bold ">Nodo Studio</span>, unimos creatividad y tecnología para dar
-                vida a tus
-                ideas.
-            </span>
-            <span class="line-1">Creamos soluciones confiables que impulsen el crecimiento de tu negocio.</span>
-        </div>
-    </div>
-</div>
-
-<div class="swiper">
-    <div class="swiper-wrapper">
-
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+      <div class="sub-title1">
+        <span class="txt-b line-1"
+          >Creamos <span class="gradient-text">páginas web</span>,</span
+        >
+        <span class="txt-b line-1">transformamos tu marca</span>
+      </div>
+  
+      <div class="sub-title2">
+        <span class="line-1"
+          >En <span class="txt-bold">Nodo Studio</span>, unimos creatividad y
+          tecnología para dar vida a tus ideas.
+        </span>
+        <span class="line-1"
+          >Creamos soluciones confiables que impulsen el crecimiento de tu
+          negocio.</span
+        >
+      </div>
     </div>
   </div>
+  
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      @for (item of skills; track $index) {
+      <div class="swiper-slide">
+        <app-card-info [data]="item"></app-card-info>
+      </div>
+      }
+    </div>
+  </div>
+  <!--  -->
+  
+  <div class="div-tecn">
+    @for (item of skills; track $index) {
+    <app-card-info [data]="item"></app-card-info>
+    }
+  </div>
+  
 
 
-<!--
-    <app-header></app-header>
-<app-skills></app-skills>
-<app-us-services></app-us-services>
-<app-briefcase></app-briefcase> 
-<p>home works!</p>-->
-
-<app-footer></app-footer>
+  <app-footer></app-footer>
+  <!--
+      <app-header></app-header>
+  <app-skills></app-skills>
+  <app-us-services></app-us-services>
+  <app-briefcase></app-briefcase> 
+  <p>home works!</p>-->
+  
