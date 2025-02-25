@@ -26,6 +26,7 @@ nav {
   display: flex;
   justify-content: center;
   padding-inline: 4%;
+  border-bottom: 1px solid rgba(var(--midnightBlue), 0.5);
 
   .navMenuList {
     display: none;
@@ -36,12 +37,48 @@ nav {
     animation: slideDown 1s ease-in-out forwards;
     transform: translate(-100vh);
 
-    .material-icons {
-      color: rgba(var(--midnightBlue), 0.5);
+    .nav-contact {
+      height: 145px;
       display: flex;
-      justify-content: end;
-      cursor: pointer;
-      font-size: 30px;
+      align-items: center;
+      justify-content: space-between;
+      div {
+        width: 100%;
+        row-gap: 10px;
+        button {
+          border: none;
+          border-radius: 100px;
+          height: 50px;
+          text-align: center;
+          font-size: clamp(12px, 18px, 18px);
+          font-weight: 500;
+          width: 100%;
+          &:first-child {
+            display: flex;
+            background-color: rgba(var(--midnightBlue), 1);
+            color: white;
+            max-width: 203px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5%;
+          }
+          &:last-child {
+            max-width: 98px;
+            width: 100%;
+            font-weight: 600;
+            background-color: var(--chartreuse);
+            color: rgba(var(--midnightBlue), 1);
+          }
+        }
+      }
+      .material-icons {
+        color: rgba(var(--midnightBlue), 0.5);
+        display: flex;
+        justify-content: end;
+        cursor: pointer;
+        font-size: 30px;
+      }
     }
     .menuActions {
       display: flex;
@@ -86,6 +123,10 @@ nav {
     }
   }
 
+  .navMenuList.closing {
+    animation: slideUp 0.5s ease-in-out forwards;
+  }
+
   .navLogo {
     height: 100%;
     width: 50%;
@@ -124,7 +165,7 @@ nav {
   .navOptions {
     // border: 1px solid black;
     display: none;
-    width: 50%;
+    width: 40%;
     justify-content: center;
     align-items: center;
     padding-inline: 20px;
@@ -148,7 +189,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    column-gap: 10px;
+    column-gap: 20px;
     button {
       border: none;
       border-radius: 100px;
@@ -191,7 +232,7 @@ nav {
   nav {
     justify-content: start;
     .navLogo {
-      width: 20%;
+      width: 30%;
       // border: 1px solid black;
     }
     .navMenu {
@@ -208,123 +249,3 @@ nav {
     }
   }
 }
-
-// .color-line {
-//   background-color: var(--chartreuse);
-//   height: 40px;
-//   width: 100%;
-// }
-
-// #navBar {
-//   border-bottom: 1px solid rgba(var(--midnightBlue), 1);
-//   width: 100%;
-//   height: 145px;
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding-inline: 4%;
-//   // border: 1px solid red;
-
-//   div {
-//     width: 100%;
-//     &:first-child {
-//       img {
-//         max-width: 192px;
-//         max-height: 61px;
-//         width: 80%;
-//       }
-//     }
-
-//     &:nth-child(2) {
-//       display: flex;
-//       justify-content: end;
-
-//       .material-icons {
-//         font-size: 30px;
-//         cursor: pointer;
-//         transition: 0.3s ease all;
-//         &:hover {
-//           color: var(--chartreuse);
-//           // background-color: var(--chartreuse);
-//         }
-//       }
-//     }
-//     &:nth-child(3) {
-//       display: none;
-//     }
-//     &:last-child {
-//       display: none;
-//     }
-//   }
-// }
-
-// /* Estilos para tablets */
-// @media (min-width: 768px) {
-//   /* Mantener el mismo diseño que en móviles */
-// }
-
-// /* Estilos para pantallas grandes */
-// @media (min-width: 992px) {
-//   #navBar {
-//     div {
-//       width: 100%;
-//       &:first-child {
-//         // border: 1px solid black;
-//         width: 20%;
-//       }
-
-//       &:nth-child(2) {
-//         display: none;
-//       }
-//       &:nth-child(3) {
-//         display: flex;
-//         // border: 1px solid black;
-//         align-items: center;
-//         justify-content: center;
-//         width: 50%;
-//         column-gap: 4%;
-
-//         a {
-//           font-size: 18px;
-//           font-weight: 500;
-//           text-decoration: none;
-//           color: black;
-//           transition: 0.3s ease all;
-
-//           &:hover {
-//             color: var(--chartreuse);
-//           }
-//         }
-//       }
-//       &:last-child {
-//         width: 30%;
-//         // border: 1px solid black;
-//         display: flex;
-//         justify-content: end;
-//         column-gap: 4%;
-//         button {
-//           border: none;
-//           border-radius: 100px;
-//           height: 50px;
-//           text-align: center;
-//           font-size: clamp(12px, 18px, 18px);
-//           font-weight: 500;
-//           &:first-child {
-//             background-color: rgba(var(--midnightBlue), 1);
-//             color: white;
-//             max-width: 203px;
-//             width: 100%;
-//           }
-//           &:last-child {
-//             max-width: 98px;
-//             width: 100%;
-//             font-weight: 600;
-//             background-color: var(--chartreuse);
-//             color: rgba(var(--midnightBlue), 1);
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

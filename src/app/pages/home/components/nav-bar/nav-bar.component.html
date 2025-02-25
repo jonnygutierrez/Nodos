@@ -25,19 +25,20 @@
       <span> ¡Cotiza Ahora! </span>
       <img src="../../../../../assets/img/header/w-icons.svg" />
     </button>
-    <button>ES</button>
+    <button (click)="selectIdiom()">{{ idiom }}</button>
   </div>
 
   <div class="navMenuList" [ngClass]="{ show: isMenuOpen }" #lists>
     <div style="width: 100%; height: 40px"></div>
-    <div
-      style="
-        height: 145px;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-      "
-    >
+    <div class="nav-contact">
+      <div style="display: flex; flex-direction: column">
+        <button>
+          <span> ¡Cotiza Ahora! </span>
+          <img src="../../../../../assets/img/header/w-icons.svg" />
+        </button>
+        <button (click)="selectIdiom()">{{ idiom }}</button>
+      </div>
+
       <i class="material-icons" (click)="toggleMenu()"> close </i>
     </div>
 
@@ -49,28 +50,3 @@
     </div>
   </div>
 </nav>
-
-<!-- <div class="color-line"></div>
-
-<div id="navBar">
-  <div>
-    <img src="../../../../../assets/img/header/id_visual.png" alt="LogoNodo" />
-  </div>
-
-  <div>
-    <i class="material-icons">lunch_dining</i>
-  </div>
-
-  <div>
-    <a href="">Nosotros</a>
-    <a href="">Servicios</a>
-    <a href="">Portafolio</a>
-    <a href="">Contáctanos</a>
-  </div>
-
-  <div>
-    <button>¡Cotiza Ahora!</button>
-    <button>ES</button>
-  </div>
-
-</div> -->

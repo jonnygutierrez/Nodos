@@ -13,11 +13,17 @@ export class NavBarComponent implements AfterViewInit {
   @ViewChild('lists') listm?: ElementRef;
   isMenuOpen: boolean = false;
 
-  ngAfterViewInit(): void {
-    console.log(this.menu);
-  }
+  public idiom: string = 'ES';
+  ngAfterViewInit(): void {}
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  selectIdiom(): void {
+    if (this.idiom === 'ES') {
+      this.idiom = 'EN';
+    } else {
+      this.idiom = 'ES';
+    }
   }
 }
