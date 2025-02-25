@@ -6,10 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
-
-
-
 }
 
 .copy{
@@ -25,7 +21,6 @@
 
 .content-terms{
     width: 600px;
-  
     display: flex;
     justify-content: space-between;
 }
@@ -35,14 +30,83 @@
     justify-content: center;
     align-items: center;
     height: 60%;
-    background: red;
     width: 600px
 }
-
+.logoNd{
+    width: 300px
+}
 
 .content-social-network{
     display: flex;
     justify-content: space-between;
-    background-color: green;
     width: 35%;
+}
+
+@media (max-width: 700px) {
+    .content-terms{
+        width: 470px;
+        font-size: 15px;
+    }
+    
+    .content-logo{
+        width: 470px;
+    }   
+    .content-social-network{
+        width: 45%; 
+     }
+}
+
+@media (max-width: 600px) {
+    .content-terms{
+        width: 400px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+   .content-terms span{
+        // width:300px;
+        // text-align: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .non{
+        display: none;
+    }
+    
+    .content-logo{
+        width: 400px;
+    }  
+    .content-social-network{
+       width: 50%; 
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .content-terms{
+        width: 330px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .content-terms span{
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .non{
+        display: none;
+    }
+    
+    .content-logo{
+        width: 330px;
+    }  
+    .content-social-network{
+       width: 65%; 
+    }
+
 }

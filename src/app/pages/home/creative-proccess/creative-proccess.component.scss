@@ -1,0 +1,33 @@
+#creativeProccess{
+    height: 350px;
+    background: linear-gradient(to right, rgba(199, 125, 255, 0.212), white, rgba(199, 125, 255, 0.212));
+    filter: blur(0px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content-btn-proccess{
+        display: flex;
+        justify-content: center;
+        margin-top:4vh;
+        .btn-proccess{
+            background-color: rgba(199, 125, 255, 1);
+            height: 40px;
+            width: 160px;
+            display :flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 19px; 
+            font-weight: 500;
+        }
+    }
+    .titleProcces{
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    .content-subtble{
+        font-size: 18px;
+        text-align: center;
+    }
+
+}

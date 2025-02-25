@@ -6,6 +6,7 @@ import { BriefcaseComponent } from './briefcase/briefcase.component';
 import { NavBarComponent } from "./components/nav-bar/nav-bar.component";
 import { CardInfoComponent } from './components/card-info/card-info.component';
 import { FooterComponent } from './footer/footer.component';
+import { CreativeProccessComponent } from './creative-proccess/creative-proccess.component';
 
 @Component({
   selector: 'app-home',
@@ -17,7 +18,8 @@ import { FooterComponent } from './footer/footer.component';
     BriefcaseComponent,
     NavBarComponent, 
     CardInfoComponent,
-    FooterComponent
+    FooterComponent,
+    CreativeProccessComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
