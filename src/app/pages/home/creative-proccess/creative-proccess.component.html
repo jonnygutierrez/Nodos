@@ -1,13 +1,21 @@
 <section id="creativeProccess" class="w100">
-
     <div class="w100 content-btn-proccess">
         <button class="btn-proccess">Proceso </button>
     </div>
-
     <span class="titleProcces">Nuestro Proceso Creativo</span>
-    <div class="content-subtble w40">
-        <span>En Nodo, diseñamos identidades visuales, páginas web y aplicaciones móviles que cuentan tu historia y destacan tu marca.</span>
+    <div class="content-subtble ">
+        <span>En <span class="fnt500">Nodo</span>, diseñamos identidades visuales, páginas web y aplicaciones móviles que cuentan tu historia y destacan tu marca.</span>
     </div>
+
+    <div class="contntProccessInfo">
+        <div class="proccess" *ngFor="let proceso of procesos" [ngClass]="proceso.class">
+          <div class="content-lft-info w30"></div>
+          <div class="conent-right-info w70">
+            <span class="title">{{ proceso.title }}</span>
+            <span>{{ proceso.description }}</span>
+          </div>
+        </div>
+      </div>
 
 
 </section>
