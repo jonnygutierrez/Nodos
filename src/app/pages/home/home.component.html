@@ -1,7 +1,7 @@
 <div id="container" #con>
   <!-- NAVBAR -->
   <app-nav-bar></app-nav-bar>
-  <!-- <div class="b-container">
+   <div class="b-container">
     <div class="sub-title1">
       <span class="txt-b line-1"
         >Creamos <span class="gradient-text">páginas web</span>,</span
@@ -19,16 +19,19 @@
         negocio.</span
       >
     </div>
-  </div> -->
+  </div> 
 </div>
-<!-- 
-<div class="swiper">
-  <div class="swiper-wrapper">
-    @for (item of skills; track $index) {
-    <div class="swiper-slide">
-      <app-card-info [data]="item"></app-card-info>
+
+<div style="width: 100%; padding-inline: 4%;">
+
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      @for (item of skills; track $index) {
+        <div class="swiper-slide">
+          <app-card-info [data]="item"></app-card-info>
+        </div>
+      }
     </div>
-    }
   </div>
 </div>
 
@@ -36,7 +39,25 @@
   @for (item of skills; track $index) {
   <app-card-info [data]="item"></app-card-info>
   }
-</div> -->
+</div> 
+
+<!--
+<section id="image-carousel" #carrusel class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="https://splidejs.com/images/slides/image-slider/01.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="https://splidejs.com/images/slides/image-slider/02.jpg" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="https://splidejs.com/images/slides/image-slider/03.jpg" alt="">
+			</li>
+		</ul>
+  </div>
+</section>
+-->
 
 <!--
     <app-header></app-header>

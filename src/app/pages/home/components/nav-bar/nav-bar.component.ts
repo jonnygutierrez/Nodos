@@ -7,24 +7,29 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
   imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss',
+  
 })
-export class NavBarComponent implements AfterViewInit {
+export class NavBarComponent   {
   @ViewChild('menu') menu?: ElementRef;
   @ViewChild('lists') listm?: ElementRef;
   isMenuOpen: boolean = false;
+  
 
   public idiom: string = 'ES';
-  ngAfterViewInit(): void {}
+
 
   toggleMenu() {
+    
     if (this.isMenuOpen) {
       this.listm?.nativeElement.classList.add('closing');
-
+      
       setTimeout(() => {
         this.isMenuOpen = false;
         this.listm?.nativeElement.classList.remove('closing');
+        document.body.style.overflow = ''
       }, 500);
     } else {
+      document.body.style.overflow = 'hidden'
       this.isMenuOpen = true;
     }
   }
