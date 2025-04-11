@@ -1,0 +1,112 @@
+#section-footer {
+    height: 350px;
+    background: linear-gradient(to right, rgba(0, 196, 255, 0.2), white, rgba(149, 242, 17, 0.4));
+    filter: blur(0px); 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copy{
+    background-color: #95F211 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: #001423;
+    height: 20%;
+}
+
+
+.content-terms{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 600px
+}
+.logoNd{
+    width: 300px
+}
+
+.content-social-network{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+@media (max-width: 700px) {
+    .content-terms{
+        width: 470px;
+        font-size: 15px;
+    }
+    
+    .content-logo{
+        width: 470px;
+    }   
+    .content-social-network{
+        width: 45%; 
+     }
+}
+
+@media (max-width: 600px) {
+    .content-terms{
+        width: 400px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+   .content-terms span{
+        // width:300px;
+        // text-align: center;
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .non{
+        display: none;
+    }
+    
+    .content-logo{
+        width: 400px;
+    }  
+    .content-social-network{
+       width: 50%; 
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    .content-terms{
+        width: 330px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .content-terms span{
+        border-bottom: 1px solid black;
+        margin-bottom: 10px;
+    }
+    .non{
+        display: none;
+    }
+    
+    .content-logo{
+        width: 330px;
+    }  
+    .content-social-network{
+       width: 65%; 
+    }
+
+}

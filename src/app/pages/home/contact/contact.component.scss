@@ -1,0 +1,72 @@
+#contactComponent{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+
+    .lft{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .contentForm{
+            // height: 30vh;
+            display: flex;
+            flex-direction: column;
+            input{
+                background-color: rgba(246, 246, 246, 1);
+                border-radius: 8px;
+                border: none;
+                height: 55px;
+                margin-top: 25px;
+                padding: 8px;
+                width: 100% !important;
+            }
+            textarea{
+                padding: 8px;
+                margin-top: 25px;
+                border-radius: 8px;
+                border: none;
+                resize: none;
+                height: 20vh;
+                background-color: rgba(246, 246, 246, 1);
+            }
+        }
+
+
+    }
+    .contLine{
+        height: 60%;
+        width:1px;
+        border: 1px solid grey;
+    }
+    .rht{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .tl {
+            font-size: 45px; 
+            font-weight: 600;            
+            .letterdegrant {
+                background: linear-gradient(90deg,  rgba(149, 242, 17, 1),  rgba(0, 196, 255, 1), rgba(149, 242, 17, 1));
+                background-size: 200% auto;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                animation: gradientMoveReverse 3s linear infinite;
+            }
+        }        
+
+        @keyframes gradientMoveReverse {
+            0% { background-position: 200% center; }
+            100% { background-position: 0% center; }
+        }
+        .tl-l{
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+
+}

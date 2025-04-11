@@ -6,6 +6,8 @@ import { BriefcaseComponent } from './briefcase/briefcase.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { CardInfoComponent } from './components/card-info/card-info.component';
 import Splide from '@splidejs/splide';
+import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -16,6 +18,8 @@ import Splide from '@splidejs/splide';
     BriefcaseComponent,
     NavBarComponent,
     CardInfoComponent,
+    FooterComponent,
+    ContactComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
