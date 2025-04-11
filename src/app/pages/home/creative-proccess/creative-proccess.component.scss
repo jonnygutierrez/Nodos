@@ -1,0 +1,123 @@
+#creativeProccess{
+    background: linear-gradient(to right, rgba(199, 125, 255, 0.212), white, rgba(199, 125, 255, 0.212));
+    filter: blur(0px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+
+    .content-btn-proccess{
+        display: flex;
+        justify-content: center;
+        margin-top:4vh;
+        .btn-proccess{
+            height: 40px;
+            width: 160px;
+            display :flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 19px; 
+            font-weight: 500;
+        }
+    }
+    .titleProcces{
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .content-subtble{
+        width: 800px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .fnt500{
+        font-weight: 600;
+    }
+    .contntProccessInfo{
+        width:1200px;
+        margin-top: 65px;
+        margin-bottom:5vh;
+        display: flex;
+        .proccess{
+            display: flex;
+            border-right: 2px solid black;
+            .content-lft-info{
+                display:flex;
+                justify-content:center;
+                align-items: center;
+            }
+            .conent-right-info{
+                display: flex;
+                flex-direction: column;
+                padding-right:35px;
+                .title{
+                    font-weight: 600;
+                    font-style: italic;
+                }
+            }
+          
+        }
+        .cre{
+            border: none;
+        }
+        
+    }
+
+}
+
+@media (max-width: 1250px) {
+    .contntProccessInfo{
+        width:850px !important;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .contntProccessInfo{
+        width:750px !important;
+        align-items: center;
+        .proccess{
+            font-size: 15px;
+        }
+    }
+    .w30{
+        width: 50px !important;
+    }
+}
+@media (max-width: 870px) {
+    
+    .contntProccessInfo{
+        width:540px !important;
+        align-items: center;
+        margin-top: 20px !important
+        ;
+        .proccess{
+            font-size: 14px;
+        }
+
+    }
+    .content-subtble{
+        font-size: 16px !important;
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .contntProccessInfo{
+        align-items: center;
+        background-color: rgb(80, 153, 51) !important;
+        margin-top: 20px !important ;
+        color: red;
+        .proccess{
+            font-size: 14px;
+        }
+
+    }
+    .content-subtble{
+        font-size: 15px !important;
+        width: 400px !important;
+    }
+}

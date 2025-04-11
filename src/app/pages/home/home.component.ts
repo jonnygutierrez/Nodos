@@ -8,6 +8,7 @@ import { CardInfoComponent } from './components/card-info/card-info.component';
 import Splide from '@splidejs/splide';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { CreativeProccessComponent } from './creative-proccess/creative-proccess.component';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -19,7 +20,8 @@ import { ContactComponent } from './contact/contact.component';
     NavBarComponent,
     CardInfoComponent,
     FooterComponent,
-    ContactComponent
+    ContactComponent,
+    CreativeProccessComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

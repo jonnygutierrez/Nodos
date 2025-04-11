@@ -1,7 +1,6 @@
 #contactComponent{
     display: flex;
     align-items: center;
-    border-top: 1px solid green;
     .lft{
         display: flex;
         flex-direction: column;
@@ -20,14 +19,35 @@
                 border-radius: 8px;
                 background-color: rgba(246, 246, 246, 1);
             }
-            input{
-                height: 55px;
-            }
+            input{ height: 55px; }
             textarea{               
                 resize: none;
                 height: 20vh;
             }
+            .btn-send {
+                height: 55px;
+                width: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 25px !important;
+                background-color: rgba(0, 20, 35, 1);
+                border-radius: 8px;
+                transition: ease all 0.40s;            
+                span {
+                  font-size: 18px;
+                  color: white;
+                  transition: ease all 0.40s; 
+                }                
+                &:hover {
+                  color: rgba(0, 20, 35, 1);
+                  border: 1px solid rgba(0, 20, 35, 1);
+                  background-color: white;                  
+                  span { color: rgba(0, 20, 35, 1);}
+                }
+              } 
         }
+
         .titlCon{
             font-size: 42px;
             color: rgba(0, 20, 35, 1);
