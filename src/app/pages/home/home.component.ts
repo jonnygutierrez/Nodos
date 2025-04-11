@@ -90,8 +90,8 @@ export class HomeComponent {
     // Inicializa Swiper después de que la vista se haya cargado
     new (window as any).Swiper('.swiper', {
       slidesPerView: 1.8,
-      spaceBetween: 0,
-
+      spaceBetween: 10,
+      
       loop: true,
       autoplay: {
         delay: 5000,
@@ -105,7 +105,9 @@ export class HomeComponent {
           slidesPerView: 4,
         },
         1440: {
+          spaceBetween:5,
           slidesPerView: 7,
+          
         },
       },
     });

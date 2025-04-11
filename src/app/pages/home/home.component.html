@@ -1,35 +1,57 @@
 <div id="container" #con>
   <!-- NAVBAR -->
   <app-nav-bar></app-nav-bar>
-   <div class="b-container">
+  <div class="b-container">
     <div class="sub-title1">
-      <span class="txt-b line-1"
-        >Creamos <span class="gradient-text">páginas web</span>,</span
-      >
+      <span class="txt-b line-1">Creamos <span class="gradient-text">páginas web</span>,</span>
       <span class="txt-b line-1">transformamos tu marca</span>
     </div>
 
     <div class="sub-title2">
-      <span class="line-1"
-        >En <span class="txt-bold">Nodo Studio</span>, unimos creatividad y
+      <span class="line-1">En <span class="txt-bold">Nodo Studio</span>, unimos creatividad y
         tecnología para dar vida a tus ideas.
       </span>
-      <span class="line-1"
-        >Creamos soluciones confiables que impulsen el crecimiento de tu
-        negocio.</span
-      >
+      <span class="line-1">Creamos soluciones confiables que impulsen el crecimiento de tu
+        negocio.</span>
     </div>
-  </div> 
+  </div>
 </div>
 
-<div style="width: 100%; padding-inline: 4%;">
 
+<div style="width: 100%;display: flex;padding-inline: 4%; padding-block: 30px;border:1px solid black">
   <div class="swiper">
     <div class="swiper-wrapper">
       @for (item of skills; track $index) {
-        <div class="swiper-slide">
-          <app-card-info [data]="item"></app-card-info>
-        </div>
+      <div class="swiper-slide">
+        <app-card-info [data]="item"></app-card-info>
+      </div>
+      }
+    </div>
+  </div>
+</div>
+
+<!--
+  <div style="width: 100%; padding-inline: 4%;">
+    
+    <div class="test">
+      @for (item of skills; track $index) {
+        <app-card-info [data]="item"></app-card-info>
+      }
+    </div>
+  </div>
+  
+  -->
+
+
+
+<!--
+<div class="container-flags">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      @for (item of skills; track $index) {
+      <div class="swiper-slide">
+        <app-card-info [data]="item"></app-card-info>
+      </div>
       }
     </div>
   </div>
@@ -39,9 +61,8 @@
   @for (item of skills; track $index) {
   <app-card-info [data]="item"></app-card-info>
   }
-</div> 
+</div>
 
-<!--
 <section id="image-carousel" #carrusel class="splide" aria-label="Beautiful Images">
   <div class="splide__track">
 		<ul class="splide__list">
@@ -64,6 +85,7 @@
 <app-skills></app-skills>
 <app-us-services></app-us-services>
 <app-briefcase></app-briefcase> 
-<p>home works!</p>-->
+<p>home works!</p>
 <app-contact></app-contact>
 <app-footer></app-footer>
+-->

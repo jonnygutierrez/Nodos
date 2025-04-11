@@ -84,24 +84,24 @@
   .sub-title1 {
     font-size: 40px;
   }
-  .div-tecn {
-    display: none;
-  }
+ 
+
 }
 
 @media (min-width: 992px) {
   .sub-title1 {
     font-size: 5vw;
   }
-  .div-tecn {
-    display: none;
-  }
+  
+
+
 }
 
 @media (min-width: 1200px) {
   .sub-title1 {
     font-size: 72px;
   }
+ 
 }
 
 .swiper {
@@ -113,7 +113,8 @@
   //background-color: orange;
 
   @media (min-width: 1660px) {
-    display: none;
+    //display: none;
+    display:flex;
   }
 }
 
@@ -128,11 +129,12 @@
 }
 
 .swiper-slide {
-  width: 100%;
+  width: fit-content;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-inline:4%;
   //border: 1px solid black;
 }
 
@@ -143,6 +145,8 @@
   align-items: center;
   justify-content: center;
   padding-inline: 4%;
+  padding-block: 55px;
+
   column-gap: 3%;
 
   @media (max-width: 1660px) {
@@ -156,4 +160,38 @@
     width: 100%;
     height: auto;
   }
+}
+
+
+
+
+
+.container-flags{
+  width: 100%;
+  padding-inline: 4%;
+  padding-block: 55px;
+  display: none;
+
+  @media (max-width: 1660px) {
+    display: flex;
+  }
+}
+
+
+//TODO
+
+.test{
+  width: 100%; /* Ancho completo del contenedor */
+  display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
+  overflow-x: auto; /* Habilita el scroll horizontal cuando los elementos desbordan */
+  padding-block: 30px; /* Espaciado vertical */
+  border: 1px solid black; /* Borde para visualizar el contenedor */
+  background-color: orange; /* Fondo para distinguir el contenedor */
+  gap: 4%; /* Espacio entre los elementos */
+  scrollbar-width: thin; /* Personaliza la barra de desplazamiento (Firefox) */
+  scrollbar-color: #888 transparent; /* Color de la barra de desplazamiento (Firefox) */
+  padding-inline: 4%;
+  
+
+
 }
