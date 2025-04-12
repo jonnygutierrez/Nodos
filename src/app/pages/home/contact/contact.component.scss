@@ -42,7 +42,8 @@
                 &:hover {
                   color: rgba(0, 20, 35, 1);
                   border: 1px solid rgba(0, 20, 35, 1);
-                  background-color: white;                  
+                  background-color: white;            
+                  transition: ease all 0.40s;          
                   span { color: rgba(0, 20, 35, 1);}
                 }
               } 
@@ -132,7 +133,7 @@
 @media (max-width: 780px) {
     #contactComponent{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         .lft, .rht{
             width: 100% !important;
         }
@@ -140,7 +141,7 @@
             height: 50vh !important;
         }
         .talkto, .descpTtxt, .contLine{
-            width: 70% !important;
+            width: 80% !important;
         }
         .contentForm, .titlCon{
             width: 80%  !important;

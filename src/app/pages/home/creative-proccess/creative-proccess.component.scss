@@ -18,6 +18,7 @@
             align-items: center;
             border-radius: 19px; 
             font-weight: 500;
+            background-color: rgba(199, 125, 255, 1);
         }
     }
     .titleProcces{
@@ -42,7 +43,7 @@
         display: flex;
         .proccess{
             display: flex;
-            border-right: 2px solid black;
+            border-right: 2px solid rgba(0, 20, 35, 1);
             .content-lft-info{
                 display:flex;
                 justify-content:center;
@@ -69,55 +70,70 @@
 
 @media (max-width: 1250px) {
     .contntProccessInfo{
-        width:850px !important;
+        width:85%!important;
     }
 }
 
 
 @media (max-width: 1000px) {
     .contntProccessInfo{
-        width:750px !important;
-        align-items: center;
-        .proccess{
-            font-size: 15px;
-        }
-    }
-    .w30{
-        width: 50px !important;
-    }
-}
-@media (max-width: 870px) {
-    
-    .contntProccessInfo{
-        width:540px !important;
-        align-items: center;
-        margin-top: 20px !important
-        ;
-        .proccess{
-            font-size: 14px;
-        }
-
+        width:90%!important;
+        font-size: 13.5px;
     }
     .content-subtble{
         font-size: 16px !important;
-        width: 400px !important;
+    }
+
+}
+
+@media (max-width: 857px) {
+    .contntProccessInfo{
+        width:95%!important;
+        font-size: 13.5px;
+    }
+    .content-subtble{
+        width: 80% !important;
+    }
+    .titleProcces{
+        font-size: 30px !important;
+    }
+}
+@media (max-width: 650px) {
+    .contntProccessInfo{
+        width:95%!important;
+        font-size: 13.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .proccess{
+            border-right: none !important;
+            border-bottom: 1px solid rgba(0, 20, 35, 1);
+            width: 70%;
+            margin-bottom: 2.5vh;
+            padding-bottom: 1.5vh;
+        }
+    }
+}
+@media (max-width: 408px) {
+    .conent-right-info{ 
+        font-size: 12px;
+    }
+    .titleProcces{   
+        font-size: 25px !important
+        ; }
+    .content-subtble{    
+        font-size: 15px !important;
+     }
+    .proccess{ 
+        width: 90% !important;
     }
 }
 
-@media (max-width: 650px) {
-    
-    .contntProccessInfo{
-        align-items: center;
-        background-color: rgb(80, 153, 51) !important;
-        margin-top: 20px !important ;
-        color: red;
-        .proccess{
-            font-size: 14px;
-        }
-
-    }
-    .content-subtble{
-        font-size: 15px !important;
-        width: 400px !important;
-    }
+@media (max-width: 326px) {
+    .titleProcces{      
+        font-size: 20px !important;
+     }
+    .content-subtble{   
+        font-size: 13px !important;
+     }
 }
