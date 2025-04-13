@@ -1,0 +1,37 @@
+#section-design-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    .tl {
+        font-size: 4.5vh; 
+        font-weight: 500;            
+        .letterdegrant {
+            background: linear-gradient(90deg,  rgba(149, 242, 17, 1),  rgba(0, 196, 255, 1), rgba(149, 242, 17, 1));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: gradientMoveReverse 3s linear infinite;
+        }
+    }        
+    @keyframes gradientMoveReverse {
+        0% { background-position: 200% center; }
+        100% { background-position: 0% center; }
+    }
+}
+
+@media (max-width: 1060px) {
+    #section-design-txt{
+        .tl { font-size: 4vw !important; }        
+    }
+}
+@media (max-width: 500px) {
+    #section-design-txt{
+        .tl {  font-size: 4.5vw !important;  }        
+    }
+}
+@media (max-width: 360px) {
+    #section-design-txt{ height: 30vh; }
+}

@@ -9,6 +9,7 @@ import Splide from '@splidejs/splide';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { CreativeProccessComponent } from './creative-proccess/creative-proccess.component';
+import { DesignTxtComponent } from './design-txt/design-txt.component';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -21,7 +22,8 @@ import { CreativeProccessComponent } from './creative-proccess/creative-proccess
     CardInfoComponent,
     FooterComponent,
     ContactComponent,
-    CreativeProccessComponent
+    CreativeProccessComponent,
+    DesignTxtComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
