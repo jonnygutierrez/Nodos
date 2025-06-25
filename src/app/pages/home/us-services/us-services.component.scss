@@ -30,20 +30,46 @@
         display: flex;
         justify-content: space-between;
         margin-top: 8vh;
+        flex-wrap: wrap;        
+        gap: 20px;              
+        justify-content: center; 
+        .cardOne{   
+            background-image: url('../../../../assets/img/cards/serviceOne.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .secondCard{
+            background-image: url('../../../../assets/img/cards/secondService.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .thirdCard{
+            background-image: url('../../../../assets/img/cards/thirdServices.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
         .card{
-            width:  45vh;
-            height: 45vh;
+            width:  408px;
+            height: 408px;
             border-radius: 15px;
         }
-        .card-midnight{
-            background-color: #001423;
-        }
-        .card-middle{
-            background: linear-gradient(180deg, #95F211 0%, #568C0A 100%);
-        }
+        // .card-midnight{
+        //     background-color: #001423;
+        // }
+        // .card-middle{
+        //     background: linear-gradient(180deg, #95F211 0%, #568C0A 100%);
+        // }
     }
 }
 
+@media (max-width: 1595px) {
+    #section-service{
+        height: auto !important;
+        padding-bottom: 5vh !important;
+        
+    }
+}
 
 @media (max-width: 1060px) {
     #section-service{
