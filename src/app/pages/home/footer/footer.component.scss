@@ -33,13 +33,16 @@
     width: 600px;
 }
 .logoNd{
-    width: 300px
+    width: 280px
 }
 
 .content-social-network{
     display: flex;
     justify-content: space-between;
     width: 35%;
+    img{
+        width: 40px;
+    }
 }
 
 @media (max-width: 700px) {
