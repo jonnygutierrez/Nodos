@@ -1,5 +1,5 @@
 /* En src/app/tu-componente/tu-componente.component.scss */
-@import '@splidejs/splide/dist/css/splide.min.css';
+@import "@splidejs/splide/dist/css/splide.min.css";
 
 #container {
   display: flex;
@@ -20,6 +20,7 @@
 }
 
 .b-container {
+  padding-top: 140px;
   padding-inline: 4%; /* Padding responsivo */
   height: 100%;
   width: 100%;
@@ -43,7 +44,12 @@
 //   -webkit-text-fill-color: transparent;
 // }
 .gradient-text {
-  background: linear-gradient(90deg,  rgba(149, 242, 17, 1),  rgba(0, 196, 255, 1), rgba(149, 242, 17, 1));
+  background: linear-gradient(
+    90deg,
+    rgba(149, 242, 17, 1),
+    rgba(0, 196, 255, 1),
+    rgba(149, 242, 17, 1)
+  );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -51,11 +57,13 @@
   animation: gradientMoveReverse 3s linear infinite;
 }
 @keyframes gradientMoveReverse {
-  0% { background-position: 200% center; }
-  100% { background-position: 0% center; }
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
 }
-
-
 
 .line-1 {
   display: block;
@@ -84,24 +92,18 @@
   .sub-title1 {
     font-size: 40px;
   }
- 
-
 }
 
 @media (min-width: 992px) {
   .sub-title1 {
     font-size: 5vw;
   }
-  
-
-
 }
 
 @media (min-width: 1200px) {
   .sub-title1 {
     font-size: 72px;
   }
- 
 }
 
 .swiper {
@@ -114,7 +116,7 @@
 
   @media (min-width: 1660px) {
     //display: none;
-    display:flex;
+    display: flex;
   }
 }
 
@@ -124,8 +126,7 @@
   height: 100%;
   //   justify-content: center;
   //   align-items: center;
- // background-color: red;
-  
+  // background-color: red;
 }
 
 .swiper-slide {
@@ -134,7 +135,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-inline:4%;
+  padding-inline: 4%;
   //border: 1px solid black;
 }
 
@@ -155,18 +156,13 @@
 }
 
 .splide__slide {
-  img{
-
+  img {
     width: 100%;
     height: auto;
   }
 }
 
-
-
-
-
-.container-flags{
+.container-flags {
   width: 100%;
   padding-inline: 4%;
   padding-block: 55px;
@@ -177,10 +173,9 @@
   }
 }
 
-
 //TODO
 
-.test{
+.test {
   width: 100%; /* Ancho completo del contenedor */
   display: flex; /* Usa flexbox para alinear los elementos horizontalmente */
   overflow-x: auto; /* Habilita el scroll horizontal cuando los elementos desbordan */
@@ -191,7 +186,55 @@
   scrollbar-width: thin; /* Personaliza la barra de desplazamiento (Firefox) */
   scrollbar-color: #888 transparent; /* Color de la barra de desplazamiento (Firefox) */
   padding-inline: 4%;
-  
+}
 
+// TODO: CHECK REFACTORY SANTIAGO
+.div-actionss {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 35px;
 
+  .div-btns {
+    font-size: 18px;
+    width: 190px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    // animación suave
+    transition: transform 0.3s ease, all 0.3s ease;
+    transform: translateY(0); // valor inicial
+  }
+  .left {
+    background-color: var(--deepSkyBlue);
+    &:hover {
+      background-color: transparent;
+      border: 1px solid var(--deepSkyBlue);
+      color: var(--deepSkyBlue);
+    }
+  }
+
+  .rigth {
+    background-color: rgb(var(--midnightBlue), 1);
+    &:hover {
+      background-color: transparent;
+      border: 1px solid rgb(var(--midnightBlue), 1);
+      color: rgb(var(--midnightBlue), 1);
+    }
+  }
+}
+
+@media (min-width: 577px) {
+  .div-actionss {
+    flex-direction: row;
+    column-gap: 35px;
+    row-gap: 0;
+    .div-btns {
+      transform: translateY(10px);
+    }
+  }
 }

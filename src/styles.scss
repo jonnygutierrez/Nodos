@@ -1,3 +1,4 @@
+// REFERENCIA A COLORES GLOBALES
 :root {
   --midnightBlue: 0, 20, 35;
   --chartreuse: rgba(149, 242, 17, 1);
@@ -14,43 +15,47 @@
   font-family: poppins;
 }
 
-html {
-  font-size: 100%;
-  line-height: 1.5;
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: poppins;
-}
-
+html,
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
+  height: 100%;
 }
+// html {
+//   font-size: 100%;
+//   line-height: 1.5;
+//   scroll-behavior: smooth;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   font-family: poppins;
+// }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-button {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
+// body {
+//   margin: 0;
+//   font-family: Arial, sans-serif;
+//   background-color: #fff;
+//   color: #000;
+// }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+// input,
+// button,
+// textarea,
+// select {
+//   font: inherit;
+// }
+// button {
+//   cursor: pointer;
+//   background: none;
+//   border: none;
+// }
 
-ul,
-ol {
-  list-style: none;
-}
+// a {
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+// ul,
+// ol {
+//   list-style: none;
+// }
 
 // .w100 {
 //   width: 100%;
@@ -90,11 +95,11 @@ ol {
   }
 }
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+// html,
+// body {
+//   height: 100%;
+// }
+// body {
+//   margin: 0;
+//   font-family: Roboto, "Helvetica Neue", sans-serif;
+// }

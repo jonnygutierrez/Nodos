@@ -23,13 +23,12 @@ import { DesignTxtComponent } from './design-txt/design-txt.component';
     FooterComponent,
     ContactComponent,
     CreativeProccessComponent,
-    DesignTxtComponent
+    DesignTxtComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-
   @ViewChild('carrusel') carrusel?: ElementRef;
 
   skills = [
@@ -78,24 +77,21 @@ export class HomeComponent {
   ];
 
   ngAfterViewInit(): void {
-
     //  new Splide(this.carrusel?.nativeElement, {
-  //
-     //   perPage:2,
+    //
+    //   perPage:2,
     //    breakpoints:{
-     //     640:{
-     //       perPage
+    //     640:{
+    //       perPage
     //      }
-     //   }
-     // }).mount();
-    
-
+    //   }
+    // }).mount();
 
     // Inicializa Swiper después de que la vista se haya cargado
     new (window as any).Swiper('.swiper', {
       slidesPerView: 1.8,
       spaceBetween: 10,
-      
+
       loop: true,
       autoplay: {
         delay: 5000,
@@ -109,11 +105,30 @@ export class HomeComponent {
           slidesPerView: 4,
         },
         1440: {
-          spaceBetween:5,
+          spaceBetween: 5,
           slidesPerView: 7,
-          
         },
       },
     });
+  }
+
+  // Navigate Reference
+  onNavigate(value: string): void {
+    // TODO: CHECK ALTURA SEA LA CORRECTA
+    const element = document.querySelector(`#${value}`);
+    if (element) {
+      window.scrollTo({
+        top: element.getBoundingClientRect().top + window.scrollY - 140,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  onWhatsapp(): void {
+    const link = document.createElement('a');
+    link.href =
+      'https://wa.me/529933700335?text=%C2%A1Hola!%2C%20me%20gustar%C3%ADa%20saber%20m%C3%A1s%20sobre%20sus%20servicios';
+    link.target = '_blank';
+    link.click();
   }
 }

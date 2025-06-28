@@ -1,8 +1,3 @@
-.color-line {
-  background-color: var(--chartreuse);
-  height: 40px;
-  width: 100%;
-}
 @keyframes slideDown {
   from {
     transform: translateY(-100vh);
@@ -28,7 +23,6 @@ nav {
   justify-content: center;
   padding-inline: 4%;
   border-bottom: 1px solid rgba(var(--midnightBlue), 0.5);
-
 
   // animation: slideDown 1s ease-in-out forwards;
 
@@ -74,6 +68,11 @@ nav {
             background-color: var(--chartreuse);
             color: rgba(var(--midnightBlue), 1);
           }
+          &:active {
+            border: 1px solid black;
+            background-color: white;
+            color: black;
+          }
         }
       }
       .material-icons {
@@ -95,6 +94,7 @@ nav {
       // position: relative;
       top: 25%;
       a {
+        cursor: pointer;
         font-size: 25px;
         width: max-content;
       }
@@ -181,6 +181,7 @@ nav {
     font-weight: 500;
     line-height: 27px;
     a {
+      cursor: pointer;
       transition: 0.3s ease all;
       &:hover {
         color: rgba(var(--midnightBlue), 0.5);
@@ -191,19 +192,20 @@ nav {
   .navContact {
     animation: slideDown 1s ease-in-out forwards;
     width: 30%;
-    // border: 1px solid black;
     display: none;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     column-gap: 20px;
     button {
+      cursor: pointer;
       border: none;
       border-radius: 100px;
       height: 50px;
       text-align: center;
       font-size: clamp(12px, 18px, 18px);
       font-weight: 500;
+      transition: 0.3s ease all;
       &:first-child {
         display: flex;
         background-color: rgba(var(--midnightBlue), 1);
@@ -230,6 +232,11 @@ nav {
         font-weight: 600;
         background-color: var(--chartreuse);
         color: rgba(var(--midnightBlue), 1);
+      }
+      &:active {
+        border: 1px solid black;
+        background-color: white;
+        color: black;
       }
     }
   }
@@ -288,4 +295,61 @@ nav {
 
 .rotate-icon {
   animation: rotateOpen 0.3s ease-in-out forwards;
+}
+
+// new class SANTIAGO
+
+.swiper {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(var(--midnightBlue), 1);
+}
+
+.swiper-slide {
+  position: relative; // Necesario para posicionamiento absoluto de ::after
+  width: fit-content !important;
+  margin-left: 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-shrink: 0;
+  padding: 10px 10px;
+
+  span {
+    font-family: sans-serif !important;
+    column-gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 16px;
+    pointer-events: none; // opcional: evita interacción con el texto
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #ffffff;
+    background: linear-gradient(
+      90deg,
+      rgba(var(--midnightBlue), 0.4) 0%,
+      rgba(var(--midnightBlue), 1) 100%
+    );
+    opacity: 0.8;
+    z-index: 2;
+    pointer-events: none; // opcional: permite hacer click a través del overlay
+  }
+}
+.scrollY {
+  nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+  }
 }

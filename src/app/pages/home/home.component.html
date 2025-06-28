@@ -1,24 +1,37 @@
 <div id="container" #con>
   <!-- NAVBAR -->
-  <app-nav-bar></app-nav-bar>
+  <app-nav-bar (routeSelect)="onNavigate($event)"></app-nav-bar>
   <div class="b-container">
     <div class="sub-title1">
-      <span class="txt-b line-1">Creamos <span class="gradient-text">páginas web</span>,</span>
+      <span class="txt-b line-1"
+        >Creamos <span class="gradient-text">páginas web</span>,</span
+      >
       <span class="txt-b line-1">transformamos tu marca</span>
     </div>
 
     <div class="sub-title2">
-      <span class="line-1">En <span class="txt-bold">Nodo Studio</span>, unimos creatividad y
+      <span class="line-1"
+        >En <span class="txt-bold">Nodo Studio</span>, unimos creatividad y
         tecnología para dar vida a tus ideas.
       </span>
-      <span class="line-1">Creamos soluciones confiables que impulsen el crecimiento de tu
-        negocio.</span>
+      <span class="line-1"
+        >Creamos soluciones confiables que impulsen el crecimiento de tu
+        negocio.</span
+      >
+    </div>
+    <!-- ACTIONS -->
+    <div class="div-actionss">
+      <button class="div-btns left">Ver Precios</button>
+      <button (click)="onWhatsapp()" class="div-btns rigth">
+        ¿Contáctanos!
+      </button>
     </div>
   </div>
 </div>
 
-
-<div style="width: 100%;display: flex;padding-inline: 4%; padding-block: 30px;">
+<div
+  style="width: 100%; display: flex; padding-inline: 4%; padding-block: 30px"
+>
   <div class="swiper">
     <div class="swiper-wrapper">
       @for (item of skills; track $index) {
@@ -41,8 +54,6 @@
   </div>
   
   -->
-
-
 
 <!--
 <div class="container-flags">
@@ -80,14 +91,12 @@
 </section>
 -->
 
-
-    <!-- <app-header></app-header> -->
+<!-- <app-header></app-header> -->
 <!-- <app-skills></app-skills> -->
 <app-us-services></app-us-services>
 <!-- <app-briefcase></app-briefcase>  -->
 <!-- <p>home works!</p> -->
 
-
 <app-creative-proccess></app-creative-proccess>
-<app-contact></app-contact>
+<app-contact id="contact-us"></app-contact>
 <app-footer></app-footer>
