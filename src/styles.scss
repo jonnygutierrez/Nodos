@@ -1,4 +1,17 @@
 // REFERENCIA A COLORES GLOBALES
+@font-face {
+  font-family: "Lufga";
+  src: url("/assets/fonts/lufga/LufgaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+// REFERENCIA A COLORES GLOBALES
+@font-face {
+  font-family: "Lufga";
+  src: url("/assets/fonts/lufga/LufgaMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 :root {
   --midnightBlue: 0, 20, 35;
   --chartreuse: rgba(149, 242, 17, 1);
@@ -18,6 +31,11 @@
 html,
 body {
   height: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
 }
 // html {
 //   font-size: 100%;

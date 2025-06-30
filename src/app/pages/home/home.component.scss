@@ -20,7 +20,7 @@
 }
 
 .b-container {
-  padding-top: 140px;
+  padding-top: 185px;
   padding-inline: 4%; /* Padding responsivo */
   height: 100%;
   width: 100%;
@@ -236,5 +236,34 @@
     .div-btns {
       transform: translateY(10px);
     }
+  }
+}
+
+// DISEÑO ILIMITADO
+.div-cotn-ili {
+  width: 100%;
+  // border: 1px solid black;
+  height: 410px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .p-text {
+    transition: 0.3s ease max-width;
+    text-align: center;
+    font-family: "Lufga";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+    min-width: 348px;
+    max-width: 902px;
+    // height: 300px;
+  }
+
+  span {
+    font-family: poppins;
+    font-weight: 700;
   }
 }
