@@ -4,24 +4,34 @@
 #container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(0, 195, 255, 0.219) 0%,
-      rgba(148, 242, 17, 0.295) 100%
-    );
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%),
+              linear-gradient(90deg, 
+                rgba(0, 195, 255, 0.459) 0%, 
+                rgba(148, 242, 17, 0.432) 100%);
+  background-size: 100% 100%, 300% 100%; 
+  animation: gradientMove 8s ease infinite alternate; 
   max-height: 800px;
   height: 100%;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .b-container {
   padding-top: 185px;
-  padding-inline: 4%; /* Padding responsivo */
+  padding-inline: 4%;
   height: 100%;
   width: 100%;
   align-items: center;
