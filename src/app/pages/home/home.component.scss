@@ -195,7 +195,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  row-gap: 35px;
+  row-gap: 20px;
 
   .div-btns {
     font-size: 18px;
@@ -265,5 +265,38 @@
   span {
     font-family: poppins;
     font-weight: 700;
+  }
+}
+
+//* ESTILOS DE PAQUETES
+.div-sales {
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1820px;
+  .sub-sales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 337px;
+    border: 1px solid black;
+    row-gap: 14px;
+    .sales-title {
+      text-align: center;
+      width: 100%;
+      font-family: "Lufga";
+      font-weight: bold;
+      font-size: 40px;
+    }
+    .sales-subtitle {
+      font-weight: normal;
+      text-align: center;
+      width: 100%;
+      font-family: poppins;
+      font-size: 18px;
+    }
   }
 }
