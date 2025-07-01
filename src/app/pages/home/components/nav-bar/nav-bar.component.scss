@@ -21,7 +21,7 @@ nav {
   height: 145px;
   display: flex;
   justify-content: center;
-  padding-inline: 4%;
+  padding-inline: 40px;
   border-bottom: 1px solid rgba(var(--midnightBlue), 0.5);
 
   // animation: slideDown 1s ease-in-out forwards;
@@ -133,7 +133,7 @@ nav {
 
   .navLogo {
     height: 100%;
-    width: 50%;
+    width: 60%;
     display: flex;
     animation: slideDown 1s ease-in-out forwards;
     align-items: center;
@@ -143,9 +143,10 @@ nav {
       // border: 1px solid black;
       max-width: 192px;
       max-height: 61px;
-      width: 80%;
+      width: 100%;
 
       img {
+        min-width: 192px;
         width: 100%;
         height: 100%;
       }
@@ -156,7 +157,7 @@ nav {
     display: flex;
     justify-content: center;
     height: 100%;
-    width: 50%;
+    width: 40%;
     justify-content: end;
     align-items: center;
     // border: 1px solid black;
