@@ -1,0 +1,103 @@
+[
+  {
+    "title": "Paquetes de Desarrollo Web",
+    "value": 0,
+    "pack": [
+      {
+        "color": "basico",
+        "type": "Básico",
+        "price": 1500,
+        "description": "Ideal para emprendedores que necesitan presencia básica en internet.",
+        "details": [
+          "Sitio web estático (HTML/CSS)",
+          "Hasta 5 páginas internas",
+          "Diseño responsive (móvil y escritorio)",
+          "Integración con redes sociales",
+          "Soporte por correo"
+        ]
+      },
+      {
+        "color": "estandar",
+        "type": "Estándar",
+        "price": 3500,
+        "description": "Perfecto para empresas que buscan funcionalidades básicas dinámicas.",
+        "details": [
+          "Sitio web dinámico (con CMS básico)",
+          "Hasta 10 páginas internas",
+          "Diseño responsive personalizado",
+          "Formulario de contacto inteligente",
+          "Integración con Google Analytics",
+          "Dominio + hosting por 1 año",
+          "Soporte técnico vía chat"
+        ]
+      },
+      {
+        "color": "premium",
+        "type": "Premium",
+        "price": 6000,
+        "description": "Para marcas que quieren una solución completa y escalable.",
+        "details": [
+          "Sitio web a medida (React, Angular o similar)",
+          "Panel de administración personalizado",
+          "Diseño UI/UX avanzado",
+          "Integración con APIs externas",
+          "Optimización SEO On-Page",
+          "Dominio + hosting gestionado por 2 años",
+          "Soporte 24/7 vía chat, teléfono y correo",
+          "Capacitación para manejo del sitio"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Paquetes de E-commerce",
+    "value": 1,
+    "pack": [
+      {
+        "color": "basico",
+        "type": "Básico",
+        "price": 2500,
+        "description": "Ideal para emprendedores que inician su tienda online.",
+        "details": [
+          "Tienda online básica (hasta 20 productos)",
+          "Integración con PayPal y/o MercadoPago",
+          "Diseño responsivo",
+          "Catálogo visual editable",
+          "Manual de uso"
+        ]
+      },
+      {
+        "color": "estandar",
+        "type": "Estándar",
+        "price": 4500,
+        "description": "Perfecto para negocios que buscan crecer con funcionalidad media.",
+        "details": [
+          "Tienda online con carrito de compras",
+          "Hasta 100 productos",
+          "Sistema de inventario básico",
+          "Múltiples opciones de pago integradas",
+          "Gestión de envíos y pedidos",
+          "Diseño personalizado",
+          "Soporte técnico vía chat"
+        ]
+      },
+      {
+        "color": "premium",
+        "type": "Premium",
+        "price": 8000,
+        "description": "Para marcas que quieren destacar y expandirse.",
+        "details": [
+          "Tienda online completa con panel admin",
+          "Hasta 500 productos",
+          "Sistema de inventario avanzado",
+          "Integración con ERP u otras herramientas",
+          "Módulo de clientes y suscripciones",
+          "Personalización UX/UI",
+          "Dominio + hosting gestionado por 2 años",
+          "Soporte 24/7 vía chat, teléfono y correo",
+          "Análisis de tráfico y ventas"
+        ]
+      }
+    ]
+  }
+]

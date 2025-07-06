@@ -87,7 +87,7 @@
     </mat-button-toggle-group>
     <!-- </div> -->
     <!-- CARD DE PAQUETES -->
-    <div class="cont-pack">
+    <div class="cont-pack" *ngIf="getAllPack">
       @for (card of filterPack.pack; track $index) {
 
       <app-card-pack [pack]="filterPack.title" [data]="card"></app-card-pack>

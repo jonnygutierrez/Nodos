@@ -13,6 +13,7 @@ import { DesignTxtComponent } from './design-txt/design-txt.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CardPackComponent } from './components/card-pack/card-pack.component';
 import { CommonModule } from '@angular/common';
+import { ConfigDataService } from './services/config-data.service';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -35,7 +36,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent implements OnInit {
+  constructor(private dataService: ConfigDataService) {}
   public selectTo: any;
+  public getAllPack: any;
+
   // TYPES PAQUETES
   public allTypesPack: any = [
     {
@@ -194,7 +198,11 @@ export class HomeComponent implements OnInit {
     },
   ];
   ngOnInit(): void {
-    this.onToggleSelect(0);
+    //
+    this.dataService.getAllPack().subscribe((all) => {
+      this.getAllPack = [...all];
+      this.onToggleSelect(0);
+    });
   }
   ngAfterViewInit(): void {
     //  new Splide(this.carrusel?.nativeElement, {
@@ -254,9 +262,6 @@ export class HomeComponent implements OnInit {
 
   // METODO DE TOGGLE
   onToggleSelect(value: any): void {
-    this.filterPack = this.allTypesPack.find(
-      (item: any) => item.value === value
-    );
-    console.log(this.filterPack);
+    this.filterPack = this.getAllPack.find((item: any) => item.value === value);
   }
 }
