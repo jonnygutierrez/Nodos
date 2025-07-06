@@ -69,6 +69,31 @@
       Opciones diseñadas para ajustarse a tu visión y presupuesto
     </p>
   </div>
+  <!--  -->
+
+  <div class="toggle-pack">
+    <!-- <div> -->
+    <mat-button-toggle-group
+      appearance="legacy"
+      [value]="elementsToggle[0].value"
+      style="border-radius: 32px"
+      (change)="onToggleSelect($event.value)"
+    >
+      @for (item of elementsToggle; track $index) {
+      <mat-button-toggle class="me-toggle" [value]="item.value">{{
+        item.title
+      }}</mat-button-toggle>
+      }
+    </mat-button-toggle-group>
+    <!-- </div> -->
+    <!-- CARD DE PAQUETES -->
+    <div class="cont-pack">
+      @for (card of filterPack.pack; track $index) {
+
+      <app-card-pack [pack]="filterPack.title" [data]="card"></app-card-pack>
+      }
+    </div>
+  </div>
 </div>
 <!-- TODO DE FIN DISEÑO ILIMITADO -->
 

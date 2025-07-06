@@ -288,11 +288,15 @@
 //* ESTILOS DE PAQUETES
 .div-sales {
   width: 100%;
-  border: 1px solid black;
+  // border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1820px;
+  max-height: 1820px;
+  height: fit-content;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-block: 80px;
   .sub-sales {
     display: flex;
     flex-direction: column;
@@ -301,9 +305,11 @@
     min-width: 337px;
     width: 100%;
     max-width: 768px;
-    border: 1px solid black;
+    // padding-inline: 42px;
+    // border: 1px solid black;
     row-gap: 14px;
     .sales-title {
+      min-width: 337px;
       text-align: center;
       width: 100%;
       font-family: "Lufga";
@@ -316,6 +322,27 @@
       width: 100%;
       font-family: poppins;
       font-size: 18px;
+      min-width: 337px;
+    }
+  }
+  .toggle-pack {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 50px;
+    .cont-pack {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      row-gap: 22px;
+      transition: all 0.3s ease;
+      @media (min-width: 702px) {
+        flex-direction: row;
+        column-gap: 32px;
+        justify-content: center;
+      }
     }
   }
 }

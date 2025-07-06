@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="sub-cont">
+    <span class="type_pack" [ngClass]="'color-' + data.color">{{
+      data.type
+    }}</span>
+    <span class="price_pack"
+      >{{ data.price | currency : "USD" : "symbol" : "1.0-0" : "en-US"
+      }}<span class="symbol-price">MXN</span>
+    </span>
+    <span class="descrip_pack">{{ data.description }}</span>
+  </div>
+
+  <div class="sub-actions">
+    <button
+      (click)="onWhatsapp()"
+      class="actions-btn"
+      [ngClass]="'color-' + data.color"
+    >
+      Seleccionar
+    </button>
+  </div>
+  <mat-divider></mat-divider>
+
+  <div class="sub-details">
+    @for (detail of data.details; track $index) {
+    <div class="sub-items">
+      <img src="../../../../../assets/img/cards/Check Mark.svg" alt="Check" />
+      <span>{{ detail }}</span>
+    </div>
+    }
+  </div>
+</div>

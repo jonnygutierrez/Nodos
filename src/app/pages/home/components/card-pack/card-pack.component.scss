@@ -1,0 +1,122 @@
+.container {
+  width: 260px;
+  max-width: 300px;
+  height: fit-content;
+  max-height: 452px;
+  //   border: 1px solid black;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.3);
+  row-gap: 16px;
+  .sub-cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    row-gap: 12px;
+    .type_pack {
+      width: fit-content;
+      border-radius: 24px;
+      height: 22px;
+      // background-color: var(--chartreuse);
+      color: black;
+      font-size: 10px;
+      font-family: poppins;
+      font-weight: 500;
+      padding-inline: 12px;
+      padding-block: 2px;
+    }
+
+    .price_pack {
+      font-size: 30px;
+      font-weight: 600;
+      font-family: poppins;
+      display: flex;
+      align-items: center;
+      //   justify-content: center;
+      column-gap: 8px;
+      .symbol-price {
+        font-weight: normal;
+        font-size: 12px;
+        color: rgb(130, 154, 177);
+      }
+    }
+    .descrip_pack {
+      font-size: 10px;
+
+      width: 100%;
+    }
+  }
+
+  .sub-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .actions-btn {
+      width: 212px;
+      height: 40px;
+      // background-color: var(--chartreuse);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: 0.3s ease all;
+      color: black;
+      &:hover {
+        // border: 1px solid var(--chartreuse);
+        background-color: transparent;
+      }
+    }
+  }
+
+  .sub-details {
+    flex: 1 1 auto;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    overflow: auto;
+    .sub-items {
+      display: flex;
+      column-gap: 8px;
+      height: fit-content;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      span {
+        color: rgba(72, 101, 129, 1);
+        font-size: 10px;
+        font-weight: 400;
+        flex: 1 1 auto;
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.color-basico {
+  background-color: var(--chartreuse);
+  &.actions-btn:hover {
+    border: 1px solid var(--chartreuse);
+  }
+}
+
+.color-estandar {
+  background-color: var(--deepSkyBlue);
+  &.actions-btn:hover {
+    border: 1px solid var(--deepSkyBlue);
+  }
+}
+
+.color-premium {
+  background-color: var(--violet);
+
+  &.actions-btn:hover {
+    border: 1px solid var(--violet);
+  }
+}
