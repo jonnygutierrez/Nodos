@@ -50,7 +50,7 @@
     ]
   },
   {
-    "title": "Paquetes de E-commerce",
+    "title": "Páginas Web",
     "value": 1,
     "pack": [
       {
@@ -73,12 +73,10 @@
         "description": "Perfecto para negocios que buscan crecer con funcionalidad media.",
         "details": [
           "Tienda online con carrito de compras",
-          "Hasta 100 productos",
           "Sistema de inventario básico",
           "Múltiples opciones de pago integradas",
           "Gestión de envíos y pedidos",
-          "Diseño personalizado",
-          "Soporte técnico vía chat"
+          "Diseño personalizado"
         ]
       },
       {
@@ -92,10 +90,7 @@
           "Sistema de inventario avanzado",
           "Integración con ERP u otras herramientas",
           "Módulo de clientes y suscripciones",
-          "Personalización UX/UI",
-          "Dominio + hosting gestionado por 2 años",
-          "Soporte 24/7 vía chat, teléfono y correo",
-          "Análisis de tráfico y ventas"
+          "Personalización UX/UI"
         ]
       }
     ]

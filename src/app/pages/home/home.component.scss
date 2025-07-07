@@ -332,6 +332,17 @@
     justify-content: center;
     flex-direction: column;
     row-gap: 50px;
+
+    .me-toggle {
+      border-radius: 32px;
+
+      ::ng-deep .mat-pseudo-checkbox {
+        display: none !important;
+
+        color: white !important;
+      }
+    }
+
     .cont-pack {
       flex-wrap: wrap;
       display: flex;
@@ -345,4 +356,24 @@
       }
     }
   }
+}
+::ng-deep .mat-button-toggle {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::ng-deep .mat-button-toggle-label-content {
+  font-size: 16px;
+  padding: 0 22px !important;
+  font-weight: 400 !important;
+}
+::ng-deep .mat-button-toggle-button {
+  height: 40px !important;
+  font-weight: 400;
+}
+::ng-deep .mat-button-toggle.mat-button-toggle-checked {
+  background-color: rgb(var(--midnightBlue), 1);
+  color: white !important;
+}
+::ng-deep .mat-button-toggle-group {
+  box-shadow: none !important;
 }

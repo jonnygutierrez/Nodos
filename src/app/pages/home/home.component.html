@@ -45,7 +45,7 @@
 
 <!-- <app-header></app-header> -->
 <!-- <app-skills></app-skills> -->
-<app-us-services></app-us-services>
+<app-us-services id="services"></app-us-services>
 
 <!-- DIV DE DISEÑO ILIMITADO -->
 <div class="div-cotn-ili">
@@ -56,7 +56,7 @@
   </p>
 </div>
 
-<app-briefcase></app-briefcase>
+<app-briefcase id="wallet"></app-briefcase>
 <!-- SECCION DE PAQUETES -->
 
 <!-- FIN DE SECCION DE PAQUETES -->
@@ -76,13 +76,20 @@
     <mat-button-toggle-group
       appearance="legacy"
       [value]="elementsToggle[0].value"
-      style="border-radius: 32px"
+      style="
+        border-radius: 32px;
+        background-color: rgba(0, 20, 35, 0.03) !important;
+        color: rgba(0, 20, 35, 0.8) !important;
+      "
       (change)="onToggleSelect($event.value)"
     >
       @for (item of elementsToggle; track $index) {
-      <mat-button-toggle class="me-toggle" [value]="item.value">{{
-        item.title
-      }}</mat-button-toggle>
+      <mat-button-toggle
+        [disableRipple]="true"
+        class="me-toggle"
+        [value]="item.value"
+        >{{ item.title }}</mat-button-toggle
+      >
       }
     </mat-button-toggle-group>
     <!-- </div> -->
