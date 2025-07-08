@@ -129,3 +129,17 @@
     height: 350px !important;
   }
 }
+
+
+
+@media (max-width: 750px) {
+    #briefcase-section{
+        .cont-txt{
+            width: 80% !important;
+        }
+        .solution-span{
+            font-size: 30px !important;
+            margin-top: 25px;
+        }
+    }
+}

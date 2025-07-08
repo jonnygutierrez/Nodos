@@ -77,3 +77,15 @@
         padding-bottom: 2vh;
     }
 }
+
+@media (max-width: 750px) {
+    #section-service{
+        .cont-txt{
+            width: 80% !important;
+        }
+        .solution-span{
+            font-size: 30px !important;
+            margin-top: 25px;
+        }
+    }
+}

@@ -9,7 +9,9 @@
 
     <div class="contntProccessInfo">
         <div class="proccess" *ngFor="let proceso of procesos" [ngClass]="proceso.class">
-          <div class="content-lft-info w30"></div>
+          <div class="content-lft-info w30">
+            <img [src]="proceso.img" alt="">
+          </div>
           <div class="conent-right-info w70">
             <span class="title">{{ proceso.title }}</span>
             <span>{{ proceso.description }}</span>
