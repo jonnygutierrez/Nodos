@@ -13,17 +13,20 @@ export class CreativeProccessComponent {
     {
       title: 'Conexión',
       description: 'Escuchamos tu historia, entendemos tus objetivos y exploramos el camino que llevará tu marca al siguiente nivel.',
-      class: ''
+      class: '',
+      img:'../../../../assets/img/proccess/conection.png'
     },
     {
       title: 'Concepto',
       description: 'Damos forma a tus ideas con propuestas visuales y prototipos digitales que equilibran innovación y funcionalidad.',
-      class: ''
+      class: '',
+      img:'../../../../assets/img/proccess/concept.png'
     },
     {
       title: 'Creación',
       description: 'Construimos soluciones digitales con precisión y creatividad, listas para cautivar, comunicar y crecer junto a tu marca.',
-      class: 'cre'
+      class: 'cre',
+      img:'../../../../assets/img/proccess/creation.png'
     }
   ];
 }

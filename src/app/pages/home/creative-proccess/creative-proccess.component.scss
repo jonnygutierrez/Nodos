@@ -48,6 +48,10 @@
                 display:flex;
                 justify-content:center;
                 align-items: center;
+                img{
+                    width: 23px;
+                    height: 23px;
+                }
             }
             .conent-right-info{
                 display: flex;
@@ -107,10 +111,16 @@
         align-items: center;
         .proccess{
             border-right: none !important;
-            border-bottom: 1px solid rgba(0, 20, 35, 1);
+            // border-bottom: 1px solid rgba(0, 20, 35, 1);
+            border-bottom: none !important;
             width: 70%;
             margin-bottom: 2.5vh;
             padding-bottom: 1.5vh;
+        }
+        .conent-right-info{
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 20, 35, 1) !important;
+
         }
     }
 }
