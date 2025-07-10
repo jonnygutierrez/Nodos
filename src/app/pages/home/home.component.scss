@@ -60,6 +60,7 @@
 //   -webkit-text-fill-color: transparent;
 // }
 .gradient-text {
+  font-family: "Lufga";
   background: linear-gradient(
     90deg,
     rgba(149, 242, 17, 1),
@@ -83,7 +84,7 @@
 
 .line-1 {
   display: block;
-   font-family: "Lufga" !important;
+  font-family: "Lufga";
 }
 
 .sub-title2 {

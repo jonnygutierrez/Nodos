@@ -25,10 +25,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins ,"Lufga" ;
-    // font-family: "Lufga";
+  font-family: poppins, "Lufga";
+  // font-family: "Lufga";
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -44,11 +45,10 @@ button {
   }
 }
 
-
-.lufga{  
- font-family: "Lufga" !important;
- background-color: red ;
-}
+// .lufga{
+//  font-family: "Lufga" !important;
+//  background-color: red ;
+// }
 
 // html {
 //   font-size: 100%;
@@ -87,4 +87,3 @@ button {
 // ol {
 //   list-style: none;
 // }
-
