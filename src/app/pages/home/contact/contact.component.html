@@ -1,14 +1,15 @@
 <section id="contactComponent" class="w100">
-    <div class="w50 lft">
+    <form class="w50 lft" >
         <span class="w60 titlCon">Contáctanos</span> 
         <div class=" w60 contentForm">
-            <input type="text" placeholder="Nombre Completo">
-            <input type="text" placeholder="Correo Electrónico">
-            <textarea name="" id="" placeholder="Mensaje"></textarea>            
-            <button class="btn-send"> <span>Enviar</span> </button>
+            <input type="text" placeholder="Nombre Completo" name="nameClient" [(ngModel)]="name" >
+            <input type="text" placeholder="Correo Electrónico" name="email" [(ngModel)]="email" (ngModelChange)="onEmailChange($event)">
+            <textarea name="" id="" placeholder="Mensaje" name="message" [(ngModel)]="message"></textarea>            
+            <button [ngClass]="{ 'active': disabledEmail==true }"
+             [disabled]="disabledEmail==true" class="btn-send" (click)="sendEmailConfirm()"> <span>Enviar</span> </button>
             
         </div>
-    </div>
+    </form>
 
     <div class="contLine"></div>
 
