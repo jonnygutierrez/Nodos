@@ -3,10 +3,9 @@
         <span class="w60 titlCon">Contáctanos</span> 
         <div class=" w60 contentForm">
             <input type="text" placeholder="Nombre Completo" name="nameClient" [(ngModel)]="name" >
-            <input type="text" placeholder="Correo Electrónico" name="email" [(ngModel)]="email" (ngModelChange)="onEmailChange($event)">
+            <input type="text" placeholder="Correo Electrónico" name="email" [(ngModel)]="email" >
             <textarea name="" id="" placeholder="Mensaje" name="message" [(ngModel)]="message"></textarea>            
-            <button [ngClass]="{ 'active': disabledEmail==true }"
-             [disabled]="disabledEmail==true" class="btn-send" (click)="sendEmailConfirm()"> <span>Enviar</span> </button>
+            <button  class="btn-send" (click)="sendEmailConfirm()"> <span>Enviar</span> </button>
             
         </div>
     </form>
