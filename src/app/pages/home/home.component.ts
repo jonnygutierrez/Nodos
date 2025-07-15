@@ -13,7 +13,8 @@ import { DesignTxtComponent } from './design-txt/design-txt.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { CardPackComponent } from './components/card-pack/card-pack.component';
 import { CommonModule } from '@angular/common';
-import { ConfigDataService } from './services/config-data.service';import {MatCardModule} from '@angular/material/card';
+import { ConfigDataService } from './services/config-data.service';
+import { MatCardModule } from '@angular/material/card';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -30,7 +31,8 @@ import { ConfigDataService } from './services/config-data.service';import {MatCa
     CreativeProccessComponent,
     DesignTxtComponent,
     MatButtonToggleModule,
-    CardPackComponent,MatCardModule
+    CardPackComponent,
+    MatCardModule,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -200,8 +202,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     //
     this.dataService.getAllPack().subscribe((all) => {
-      this.getAllPack = [...all];
-      this.onToggleSelect(0);
+      if (all) {
+        this.getAllPack = [...all];
+        this.onToggleSelect(0);
+      }
     });
   }
   ngAfterViewInit(): void {
@@ -262,6 +266,8 @@ export class HomeComponent implements OnInit {
 
   // METODO DE TOGGLE
   onToggleSelect(value: any): void {
+    console.log('aaa');
+
     this.filterPack = this.getAllPack.find((item: any) => item.value === value);
   }
 }

@@ -14,11 +14,11 @@ export class ConfigDataService {
   // OBTENER TODOS LOS PAQUETES
 
   // OBTENER TODOS LOS PAQUETES
-  getAllPack(): Observable<any[]> {
+  getAllPack(): Observable<any[] | undefined> {
     return this.http.get<any[]>(`${this.configUrl}configPack.json`).pipe(
       catchError((error) => {
         console.error('Error al cargar los paquetes');
-        return of([]);
+        return of(undefined);
       })
     );
   }

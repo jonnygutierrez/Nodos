@@ -313,7 +313,7 @@
     .sales-title {
       min-width: 337px;
       text-align: center;
-      width: 100%;
+      // width: 100%;
       font-family: "Lufga";
       font-weight: bold;
       font-size: 40px;
@@ -321,7 +321,9 @@
     .sales-subtitle {
       font-weight: normal;
       text-align: center;
-      width: 100%;
+      width: calc(100vw - 75px);
+      // margin: auto;
+      max-width: 551px;
       font-family: poppins;
       font-size: 18px;
       min-width: 337px;
