@@ -47,6 +47,9 @@ email: string = '';
       .then(() => {
         console.log('se envio el correo ');
         this.alert.alertShow('success','Correo enviado')
+        this.name=''
+        this.email = ''
+        this.message = ''
       })
       .catch((error) => {
         console.error(error);
