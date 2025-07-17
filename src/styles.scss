@@ -19,18 +19,18 @@
   --violet: rgba(199, 125, 255, 1);
 }
 
+html,
+body {
+  font-family: "Poppins", "Lufga";
+  height: 100%;
+}
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins, "Lufga";
   // font-family: "Lufga";
-}
-html,
-body {
-  height: 100%;
 }
 
 button {
